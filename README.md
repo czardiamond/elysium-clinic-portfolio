@@ -1,47 +1,34 @@
-# Elysium / clinic portfolio
+# Elysium / AI consultancy
 
-A bespoke, dependency-free static portfolio for **Elysium**, an early-stage studio by Diamond Anyanwu in Lagos.
+A bespoke, dependency-free static portfolio for **Elysium**, an independent AI consultancy by Diamond Anyanwu in Lagos.
 
-## What this is
+## First proposed solution
 
-This site is an exploratory concept for a proposed managed, human-supervised patient-access / appointment-request administrative assistant for independent dental clinics in Lagos. It presents three concept studies:
+Elysium’s first proposed solution is an exploratory, human-supervised clinic enquiry workflow for independent dental clinics in Lagos. The workflow is not a deployed product or a live or proven service. The page presents three parts of this concept: the enquiry desk, the human handoff, and the weekly note.
 
-- **The enquiry desk** — clinic-approved FAQs and visible next actions.
-- **The human handoff** — appointment requests held for clinic review; never autonomous booking.
-- **The weekly note** — a simple, illustrative summary of enquiry themes and follow-ups.
-
-This is not a live or proven service. There are no real clients, testimonials, case studies, measured outcomes, integrations, analytics, or active clinic accounts.
+All examples and interactions are illustrative and synthetic. There are no real clients, testimonials, case studies, measured outcomes, active clinic accounts, or clinic integrations.
 
 ## Scope and boundaries
 
-The proposed scope is limited to clinic-approved FAQs, human-reviewed appointment requests, follow-up on missed enquiries, a simple enquiry log, and a weekly summary. It does **not** include diagnosis, treatment advice, deciding urgency, clinical triage, autonomous booking, or requesting patient information.
+The proposal explores clinic-approved FAQ drafts, human-reviewed appointment requests, follow-up flags, and a simple enquiry log and weekly summary. It does not include diagnosis, treatment advice, deciding urgency, clinical triage, autonomous booking, or requesting patient information. The portfolio does not process patient data.
 
-Every mockup and interaction is labeled or described as illustrative / synthetic. The demo tabs and “Mark for human review” controls are local-only UI behavior: nothing is saved, sent, submitted, or connected to a backend. “Request” does not mean “confirmed appointment.” The clinic retains responsibility for every response and decision.
+The demo tabs and “Mark for human review” controls are local-only UI behavior: nothing is saved, sent, submitted, or connected to a backend. A request does not mean a confirmed appointment. The clinic would retain responsibility for every response and decision.
 
-The contact link is for clinic-business discovery conversations only. Do not email patient details or appointment requests.
+The contact link is for general clinic-business discovery conversations only. Do not email patient details or appointment requests.
 
 ## Technical notes
 
 - One `index.html` containing all HTML, CSS, and JavaScript.
-- `.nojekyll` included for straightforward GitHub Pages hosting.
 - No dependencies, build step, remote fonts, stock images, forms, backend, network calls, or analytics.
-- Responsive layout designed to remain usable at 375px and larger.
-- Keyboard-accessible tabs with arrow-key navigation, visible focus states, semantic landmarks, and `prefers-reduced-motion` support.
+- Responsive layout with keyboard-accessible tabs, visible focus states, semantic landmarks, and reduced-motion support.
+- Static hosting only; publishing this portfolio does not activate a clinic workflow, intake, or data connection.
 
 ## Local preview
 
-Open `index.html` directly in a browser, or serve the directory with any static server. For example:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000/`.
+Open `index.html` directly in a browser, or run `python3 -m http.server 8000` from the directory and visit `http://localhost:8000/`.
 
 ## Portfolio and source
 
 Source repository: <https://github.com/czardiamond/elysium-clinic-portfolio>
 
 Portfolio URL: <https://czardiamond.github.io/elysium-clinic-portfolio/>
-
-Static hosting only. Publishing this portfolio does not activate a clinic workflow, patient intake, or data connection.

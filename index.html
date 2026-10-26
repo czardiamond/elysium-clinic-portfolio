@@ -19,6 +19,25 @@
     .boundary-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.boundary{padding:1.5rem;background:var(--cream);border-top:2px solid var(--forest)}.boundary.out{background:#eaded7;border-color:var(--terra)}.boundary h3{font:400 1.6rem var(--serif);margin:0 0 1rem;color:var(--forest)}.boundary ul{padding-left:1.1rem;color:var(--muted);font-size:.86rem;margin:0}.boundary li+li{margin-top:.6rem}.callout{margin-top:1rem;background:var(--forest);color:var(--ivory);padding:1.5rem;display:flex;justify-content:space-between;align-items:center;gap:2rem}.callout p{margin:0;font:400 clamp(1.35rem,2.5vw,2rem) var(--serif);max-width:700px}.callout .btn{color:var(--ivory);border-color:var(--ivory);white-space:nowrap}
     .faq{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.faq details{border-top:1px solid var(--line);padding:1rem 0}.faq summary{cursor:pointer;color:var(--forest);font:400 1.1rem var(--serif)}.faq p{font-size:.82rem;color:var(--muted);margin:.7rem 0 0}.footer{border-top:1px solid var(--line);padding:2rem 0 3rem;font-size:.75rem;color:var(--muted)}.footer-row{display:flex;justify-content:space-between;gap:1rem}.footer a{color:var(--forest);font-weight:700}.warning{font-size:.72rem;color:var(--terra);max-width:600px;margin-top:1rem}
     :focus-visible{outline:3px solid var(--terra);outline-offset:3px}@media(max-width:800px){.nav{gap:.75rem}.nav a:not(.nav-cta){display:none}.hero,.workflow{grid-template-columns:1fr;gap:3rem}.hero{padding-top:3rem}.desk{max-width:600px}.studies{grid-template-columns:1fr}.study-art{height:160px}.section{padding:5rem 0}.section-head{display:block}.section-intro{margin-top:1rem}.boundary-grid,.faq{grid-template-columns:1fr}.callout{display:block}.callout .btn{margin-top:1.3rem}}@media(max-width:430px){.site-header{padding-top:1rem}.hero h1{font-size:3.55rem}.container{padding-left:1.15rem;padding-right:1.15rem}.desk-window{padding:.7rem}.window-grid{grid-template-columns:66px 1fr;gap:.6rem}.rail b{font-size:.58rem}.flow-board{padding:.8rem}.action-zone{align-items:flex-start;flex-direction:column}.footer-row{display:block}.footer-row>*+*{display:block;margin-top:.8rem}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important;transform:none!important}}
+
+    /* Motion refresh: calm intake journey, always optional and content-safe. */
+    @media (prefers-reduced-motion: no-preference){
+      .hero .eyebrow,.hero h1,.hero .lede,.hero .button-row,.hero-note{animation:elysium-arrive .7s cubic-bezier(.2,.7,.2,1) both}
+      .hero h1{animation-delay:.08s}.hero .lede{animation-delay:.14s}.hero .button-row{animation-delay:.2s}.hero-note{animation-delay:.28s}
+      .desk{animation:elysium-desk-in .9s cubic-bezier(.2,.7,.2,1) .12s both}
+      .inbox-card{animation:elysium-card-in .65s ease both}.inbox-card:nth-child(2){animation-delay:.12s}.review-strip{animation:elysium-breathe 3.5s ease-in-out 1.1s infinite}
+      .study{animation:elysium-rise .7s ease both}.study:nth-child(2){animation-delay:.1s}.study:nth-child(3){animation-delay:.2s}
+      .flow-board{animation:elysium-board-in .8s ease both}.tab{transition:background-color .2s ease,color .2s ease,transform .2s ease}.tab:hover,.tab:focus-visible{transform:translateY(-2px)}
+      .panel:not([hidden]){animation:elysium-panel-in .35s ease both}.review-btn{transition:transform .2s ease,background-color .2s ease}.review-btn:hover,.review-btn:focus-visible{transform:translateY(-2px);background:var(--sage)}
+    }
+    @keyframes elysium-arrive{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+    @keyframes elysium-desk-in{from{opacity:0;transform:translate(18px,12px) rotate(1.2deg)}to{opacity:1;transform:rotate(1.2deg)}}
+    @keyframes elysium-card-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @keyframes elysium-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+    @keyframes elysium-board-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+    @keyframes elysium-panel-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    @keyframes elysium-breathe{0%,100%{box-shadow:0 0 0 rgba(156,175,145,0)}50%{box-shadow:0 0 0 6px rgba(156,175,145,.16)}}
+
   </style>
 </head>
 <body>
